@@ -350,10 +350,7 @@ class _homeState extends State<home> {
                                   ),
                                 ],
                               ),
-                              Row(
-                                children: [
-                                ],
-                              ),
+
                               Column(
                                 children: [
                                   Image.asset('assets/img/Group 35.png'),
