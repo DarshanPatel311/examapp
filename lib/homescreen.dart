@@ -16,32 +16,54 @@ class _homeState extends State<home> {
       appBar: AppBar  (
         backgroundColor: Color(0xffF5F5F5),
         leading: Image.asset('assets/img/Subtract.png'),
-      title: const Row(
+      title:  Row(
         children: [
           Text("S C.",style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 25,),
           ),
           Text("                                                                                               "),
-          Text("New arrivals",style: TextStyle(
+          InkWell(
+            onTap:(){
+
+                Navigator.of(context).pushReplacementNamed('/product');
+
+
+            },
+            child: Text("New arrivals",style: TextStyle(
             fontSize: 14,
             fontWeight: FontWeight.bold,
           ),),
+          ),
           Text("   "),
-          Text("Men",style: TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.bold,
-          ),),
+          InkWell(
+            onTap:(){
+              Navigator.of(context).pushReplacementNamed('/product');
+            },
+            child:Text("Men",style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
+            ),),
+          ),
           Text("   "),
-          Text("Women",style: TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.bold,
-          ),),
+          InkWell(
+            onTap:(){
+              Navigator.of(context).pushReplacementNamed('/product');
+            },
+           child: Text("Women",style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
+            ),),
+          ),
           Text("   "),
-          Text("Kids",style: TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.bold,
-          ),),
+          InkWell(
+            onTap:(){
+              Navigator.of(context).pushReplacementNamed('/product');
+            }, child:Text("Kids",style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
+            ),),
+          ),
         ],
       ),
 

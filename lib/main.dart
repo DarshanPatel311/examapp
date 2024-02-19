@@ -1,5 +1,7 @@
 import 'package:examapp/cartscreen.dart';
 import 'package:examapp/homescreen.dart';
+import 'package:examapp/productdata.dart';
+import 'package:examapp/productscreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +18,9 @@ class MyApp extends StatelessWidget {
 debugShowCheckedModeBanner: false,
 routes: {
          '/':(context)=>const home(),
-  '/cart':(context)=>const cart(),
+  '/Cart':(context)=>const cart(),
+  '/product':(context)=>const Product(),
+  '/Data':(context)=>const Data(),
 },
     );
   }
