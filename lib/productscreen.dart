@@ -2,18 +2,17 @@
 import 'package:examapp/utils/list.dart';
 import 'package:flutter/material.dart';
 
-class Product extends StatefulWidget {
-  const Product({super.key});
+class ListingScreen extends StatefulWidget {
+  const ListingScreen({super.key});
 
   @override
-  State<Product> createState() => _Second_screenState();
+  State<ListingScreen> createState() => _Second_screenState();
 }
 
-class _Second_screenState extends State<Product> {
+class _Second_screenState extends State<ListingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       appBar: AppBar  (
         backgroundColor: Color(0xffF5F5F5),
         leading: Image.asset('assets/img/Subtract.png'),
@@ -165,7 +164,7 @@ class _Second_screenState extends State<Product> {
                                   children: List.generate(productimage.length, (index) => InkWell(
                                     onTap: ()
                                     {
-                                      Navigator.pushNamed(context, '/Data',arguments: productimage[index]);
+                                      Navigator.pushNamed(context, '/productdata',arguments: productimage[index]);
                                     },
                                     child: product(index),
                                   )),
@@ -174,7 +173,7 @@ class _Second_screenState extends State<Product> {
                                   children: List.generate(productimage2.length, (index) => InkWell(
                                     onTap: ()
                                     {
-                                      Navigator.pushNamed(context, '/Data',arguments: productimage2[index]);
+                                      Navigator.pushNamed(context, '/productdata',arguments: productimage2[index]);
                                     },
                                     child: product2(index),
                                   )),
@@ -182,7 +181,7 @@ class _Second_screenState extends State<Product> {
                                 Row(
                                   children: List.generate(productimage3.length, (index) => InkWell(
                                     onTap: (){
-                                      Navigator.pushNamed(context, '/Data',arguments: productimage3[index]);
+                                      Navigator.pushNamed(context, '/productdata',arguments: productimage3[index]);
                                     },
                                     child: product3(index),
                                   )),
@@ -337,7 +336,7 @@ Widget product(index){
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 10),
-                      child: Text(productimage[index]['price'],style: TextStyle(fontWeight: FontWeight.normal,fontSize: 8),),
+                      child: Text('${productimage[index]['price']}',style: TextStyle(fontWeight: FontWeight.normal,fontSize: 8),),
                     ),
                   ],
                 ),
@@ -381,7 +380,7 @@ Widget product2(index){
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 10),
-                      child: Text(productimage[index]['price'],style: TextStyle(fontWeight: FontWeight.normal,fontSize: 8),),
+                      child: Text('${productimage[index]['price']}',style: TextStyle(fontWeight: FontWeight.normal,fontSize: 8),),
                     ),
                   ],
                 ),
@@ -425,7 +424,7 @@ Widget product3(index){
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 10),
-                      child: Text(productimage[index]['price'],style: TextStyle(fontWeight: FontWeight.normal,fontSize: 8),),
+                      child: Text('${productimage[index]['price']}',style: TextStyle(fontWeight: FontWeight.normal,fontSize: 8),),
                     ),
                   ],
                 ),

@@ -48,20 +48,20 @@ List productimage=[
   {'quantity': 1,
     'name':'Jordan Delta 2',
     'price':78000,
-    'image':'assets/img/image5.png',
+    'image':'assets/img/s6.png',
   },
 
   {
     'quantity': 1,
     'name':'Nike Air Jordan XT',
     'price':35000,
-    'image':'assets/img/image5.png',
+    'image':'assets/img/s7.png',
   },
   {
     'quantity': 1,
     'name':'RS-X-INTL Game',
     'price':35000,
-    'image':'assets/img/image5.png'
+    'image':'assets/img/s8.png'
   },
 
 ];
@@ -71,19 +71,19 @@ List productimage2=[
     'quantity': 1,
     'name':'Suede Classic',
     'price':35000,
-    'image':'assets/img/image5.png'
+    'image':'assets/img/s9.png'
   },
   {
     'quantity': 1,
     'name':'NMD 1 Refined',
     'price':35000,
-    'image':'assets/img/image5.png'
+    'image':'assets/img/s10.png'
   },
   {
     'quantity': 1,
     'name':'Superstar Classic',
     'price':35000,
-    'image':'assets/img/image5.png'
+    'image':'assets/img/s11.png'
   },
 ];
 
@@ -92,19 +92,19 @@ List productimage3=[
     'quantity': 1,
     'name':'Adiddas Beluga',
     'price':35000,
-    'image':'assets/img/image2.png'
+    'image':'assets/img/s12.png'
   },
   {
     'quantity': 1,
     'name':'Nike Air Jordan XT',
     'price':35000,
-    'image':'assets/img/image4.png'
+    'image':'assets/img/s13.png'
   },
   {
     'quantity': 1,
     'name':'Nike Wobler',
     'price':35000,
-    'image':'assets/img/image3.png'
+    'image':'assets/img/s14.png'
   },
 ];
 

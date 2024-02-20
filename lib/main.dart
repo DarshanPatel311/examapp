@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
 debugShowCheckedModeBanner: false,
 routes: {
          '/':(context)=>const home(),
-  '/Cart':(context)=>const cart(),
-  '/product':(context)=>const Product(),
-  '/Data':(context)=>const Data(),
+  '/product': (context) => const ListingScreen(),
+  '/productdata': (context) => const Thirdscreen(),
+  '/Cart': (context) => const CartScreen(),
 },
     );
   }
